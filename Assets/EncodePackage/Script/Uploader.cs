@@ -2,6 +2,8 @@
 using UnityEngine.Networking;
 using System.Collections;
 using System;
+using System.Collections.Generic;
+
 using System.Net;
 using System.IO;
 using UnityEditor;
@@ -69,26 +71,48 @@ public class Uploader : MonoBehaviour
     }
 
     public void UploadToGBXT(){
-
+        Debug.Log("poehali");
+        StartCoroutine(UploadPut());
     }
 
     IEnumerator UploadPut(){
 
         WWWForm form = new WWWForm();
-        
-        form.AddField( "name", "value" );
-        Dictionary<string, object> headers  = StateManager.HashtableToDictionary<string, object>(form.headers);
+        byte[] myData = File.ReadAllBytes(new FileInfo(FilePath).Name);
+
+        // form.AddField( "file", "value" );
+        form.AddBinaryData("file", myData);
+        // Dictionary<string, object> headers  = StateManager.HashtableToDictionary<string, object>(form.headers);
+        // headers.Add("x-token",validToken);
+
+        // Hashtable headers = form.headers;
+        // headers["x-token"] = validToken;
+
+
         byte[] rawData = form.data;
-        string url = "www.myurl.com";
+        // string url = "www.myurl.com";
 
         // Add a custom header to the request.
         // In this case a basic authentication to access a password protected resource.
-        headers["Authorization"] = "Basic " + System.Convert.ToBase64String(
-            System.Text.Encoding.ASCII.GetBytes("username:password"));
+        // headers["Authorization"] = "Basic " + System.Convert.ToBase64String(
+        //     System.Text.Encoding.ASCII.GetBytes("username:password"));
 
         // Post a request to an URL with our custom headers
-        WWW www = new WWW(url, rawData, headers);
-        yield return www;
+        // WWW www = new WWW(PUTurl, rawData, headers);
+        // yield return www;
+
+        UnityWebRequest www = UnityWebRequest.Put(PUTurl, rawData);
+        www.SetRequestHeader("x-token",validToken);
+        yield return www.Send();
+            
+            if (www.isNetworkError || www.isHttpError)
+            {
+                Debug.Log(www.error);
+            }
+            else
+            {
+                Debug.Log("Upload complete!");
+            }
 
 
 
@@ -97,33 +121,33 @@ public class Uploader : MonoBehaviour
 
 
         // byte[] myData = System.Text.Encoding.UTF8.GetBytes("This is some test data");
-        byte[] myData = File.ReadAllBytes(new FileInfo(FilePath).Name);
+        // byte[] myData = File.ReadAllBytes(new FileInfo(FilePath).Name);
         
-        UnityWebRequest www = UnityWebRequest.Put(PUTurl, myData);
-        yield return www.Send();
+        // UnityWebRequest www = UnityWebRequest.Put(PUTurl, myData);
+        // yield return www.Send();
  
-        if(www.isError) {
-            Debug.Log(www.error);
-        }
-        else {
-            Debug.Log("Upload complete!");
-        }
+        // if(www.isError) {
+        //     Debug.Log(www.error);
+        // }
+        // else {
+        //     Debug.Log("Upload complete!");
+        // }
 
     }
 
-    public byte[] imageToByteArray(System.Drawing.Image imageIn)
-    {
-        MemoryStream ms = new MemoryStream();
-        imageIn.Save(ms,System.Drawing.Imaging.ImageFormat.Gif);
-        return  ms.ToArray();
-    }
+    // public byte[] imageToByteArray(System.Drawing.Image imageIn)
+    // {
+    //     MemoryStream ms = new MemoryStream();
+    //     imageIn.Save(ms,System.Drawing.Imaging.ImageFormat.Gif);
+    //     return  ms.ToArray();
+    // }
 
-    public Image byteArrayToImage(byte[] byteArrayIn)
-    {
-        MemoryStream ms = new MemoryStream(byteArrayIn);
-        Image returnImage = Image.FromStream(ms);
-        return returnImage;
-    }
+    // public Image byteArrayToImage(byte[] byteArrayIn)
+    // {
+    //     MemoryStream ms = new MemoryStream(byteArrayIn);
+    //     Image returnImage = Image.FromStream(ms);
+    //     return returnImage;
+    // }
 
     void Start()
     {
