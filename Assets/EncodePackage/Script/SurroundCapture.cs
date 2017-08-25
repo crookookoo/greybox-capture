@@ -311,7 +311,7 @@ namespace FBCapture
         }
 
         void uploadScreenShot(string path) {
-
+            Debug.Log(path);
             GetComponent<Uploader>().FilePath = path;
             // GetComponent<Uploader>().UploadFileAlt();
 

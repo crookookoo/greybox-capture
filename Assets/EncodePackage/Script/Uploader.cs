@@ -78,7 +78,8 @@ public class Uploader : MonoBehaviour
     IEnumerator UploadPut(){
 
         WWWForm form = new WWWForm();
-        byte[] myData = File.ReadAllBytes(new FileInfo(FilePath).Name);
+        // byte[] myData = File.ReadAllBytes(new FileInfo(FilePath).Name);
+        byte[] myData = File.ReadAllBytes(@FilePath);
 
         // form.AddField( "file", "value" );
         form.AddBinaryData("file", myData);
@@ -104,15 +105,29 @@ public class Uploader : MonoBehaviour
         UnityWebRequest www = UnityWebRequest.Put(PUTurl, rawData);
         www.SetRequestHeader("x-token",validToken);
         yield return www.Send();
-            
-            if (www.isNetworkError || www.isHttpError)
-            {
+
+            // Debug.Log(www.text);
+ 
+            if(www.isError) {
                 Debug.Log(www.error);
             }
-            else
-            {
-                Debug.Log("Upload complete!");
+            else {
+                // Show results as text
+                Debug.Log(www.downloadHandler.text);
+    
+                // Or retrieve results as binary data
+                // byte[] results = www.downloadHandler.data;
+                // Debug.Log(Convert.ToBase64String(results));
             }
+
+            // if (www.isNetworkError || www.isHttpError)
+            // {
+            //     Debug.Log(www.error);
+            // }
+            // else
+            // {
+            //     Debug.Log("Upload complete!");
+            // }
 
 
 
