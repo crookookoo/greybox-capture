@@ -263,7 +263,7 @@ namespace FBCapture
 
         void OnDestroy()
         {
-            DestroyImmediate(renderTexture);
+            Destroy(renderTexture);
         }
 
             void OnApplicationQuit()

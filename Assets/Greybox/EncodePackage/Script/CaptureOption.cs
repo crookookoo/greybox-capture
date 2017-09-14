@@ -29,6 +29,9 @@ namespace FBCapture
         private bool liveStreaming = false; // Set false by force because not fully implemented
         private bool myCaptureOption;
 
+        [HideInInspector]
+        public bool verbose;
+
         private bool captureOption
         {                
             set {
@@ -37,10 +40,10 @@ namespace FBCapture
 
                 myCaptureOption = value;
 
-                surroundCapture.enabled = doSurroundCapture;
-                nonSurroundCapture.enabled = !doSurroundCapture;
-                surroundCapture.isLiveStreaming = doSurroundCapture && liveStreaming;
-                nonSurroundCapture.isLiveStreaming = !doSurroundCapture && liveStreaming;
+                // surroundCapture.enabled = doSurroundCapture;
+                // nonSurroundCapture.enabled = !doSurroundCapture;
+                // surroundCapture.isLiveStreaming = doSurroundCapture && liveStreaming;
+                // nonSurroundCapture.isLiveStreaming = !doSurroundCapture && liveStreaming;
             }
         }        
 
@@ -56,13 +59,13 @@ namespace FBCapture
                 }
             }
 
-            surroundCapture = GetComponent<SurroundCapture>();
-            nonSurroundCapture = GetComponent<NonSurroundCapture>();
+            // surroundCapture = GetComponent<SurroundCapture>();
+            // nonSurroundCapture = GetComponent<NonSurroundCapture>();
 
-            surroundCapture.enabled = doSurroundCapture;
-            nonSurroundCapture.enabled = !doSurroundCapture;
-            surroundCapture.isLiveStreaming = doSurroundCapture && liveStreaming;
-            nonSurroundCapture.isLiveStreaming = !doSurroundCapture && liveStreaming;
+            // surroundCapture.enabled = doSurroundCapture;
+            // nonSurroundCapture.enabled = !doSurroundCapture;
+            // surroundCapture.isLiveStreaming = doSurroundCapture && liveStreaming;
+            // nonSurroundCapture.isLiveStreaming = !doSurroundCapture && liveStreaming;
 
             myCaptureOption = doSurroundCapture;
         }
@@ -87,7 +90,7 @@ namespace FBCapture
 
             // 2D screen capturing
             if (Input.GetKeyDown(screenShotKey) && !doSurroundCapture) {
-                Debug.Log("Uploading screenshot..."+"\n");
+                if(verbose) Debug.Log("Capturing screenshot..."+"\n");
                 nonSurroundCapture.TakeScreenshot(screenShotWidth, screenShotHeight, ScreenShotName(screenShotWidth, screenShotHeight));
             }
 

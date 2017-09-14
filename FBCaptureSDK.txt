@@ -14,3 +14,54 @@
 [LOG]: Added metadata for 360 recognition in FB
 [LOG]: Succeeded screen capture
 [LOG]: Screenshot has successfully finished
+[LOG]: Added metadata for 360 recognition in FB
+[LOG]: Succeeded screen capture
+[LOG]: Screenshot has successfully finished
+[LOG]: Added metadata for 360 recognition in FB
+[LOG]: Succeeded screen capture
+[LOG]: Screenshot has successfully finished
+[LOG]: Added metadata for 360 recognition in FB
+[LOG]: Succeeded screen capture
+[LOG]: Screenshot has successfully finished
+[LOG]: Added metadata for 360 recognition in FB
+[LOG]: Succeeded screen capture
+[LOG]: Screenshot has successfully finished
+[LOG]: Added metadata for 360 recognition in FB
+[LOG]: Succeeded screen capture
+[LOG]: Screenshot has successfully finished
+[LOG]: Added metadata for 360 recognition in FB
+[LOG]: Succeeded screen capture
+[LOG]: Screenshot has successfully finished
+[LOG]: Added metadata for 360 recognition in FB
+[LOG]: Succeeded screen capture
+[LOG]: Screenshot has successfully finished
+[LOG]: Added metadata for 360 recognition in FB
+[LOG]: Succeeded screen capture
+[LOG]: Screenshot has successfully finished
+[LOG]: Added metadata for 360 recognition in FB
+[LOG]: Succeeded screen capture
+[LOG]: Screenshot has successfully finished
+[LOG]: Added metadata for 360 recognition in FB
+[LOG]: Succeeded screen capture
+[LOG]: Screenshot has successfully finished
+[LOG]: Added metadata for 360 recognition in FB
+[LOG]: Succeeded screen capture
+[LOG]: Screenshot has successfully finished
+[LOG]: Added metadata for 360 recognition in FB
+[LOG]: Succeeded screen capture
+[LOG]: Screenshot has successfully finished
+[LOG]: Added metadata for 360 recognition in FB
+[LOG]: Succeeded screen capture
+[LOG]: Screenshot has successfully finished
+[LOG]: Added metadata for 360 recognition in FB
+[LOG]: Succeeded screen capture
+[LOG]: Screenshot has successfully finished
+[LOG]: Added metadata for 360 recognition in FB
+[LOG]: Succeeded screen capture
+[LOG]: Screenshot has successfully finished
+[LOG]: Added metadata for 360 recognition in FB
+[LOG]: Succeeded screen capture
+[LOG]: Screenshot has successfully finished
+[LOG]: Added metadata for 360 recognition in FB
+[LOG]: Succeeded screen capture
+[LOG]: Screenshot has successfully finished
