@@ -18,12 +18,13 @@ public class CustomGreyboxInspector : Editor {
 
 		Greybox g = target as Greybox;
 
-		GUI.enabled = Application.isPlaying && TokenValid(g.token);
+		GUI.enabled = Application.isPlaying && TokenValid(g.token) && g.canTakeScreenshot;
 
 		if(GUILayout.Button("Capture Screenshot", GUILayout.Height(24))){
-		
+			g.TakeScreenShot();
 		}
 
+		GUI.enabled = true;
 
 		status = "Visit Greybox.it to get your token";
 		
@@ -36,12 +37,27 @@ public class CustomGreyboxInspector : Editor {
 		}
 
 		GUILayout.Label(status);
+		GUILayout.Space(5);
 
 		// if(Application.isPlaying) GUILayout.Label("lols");
 		foreach (string u in g.urls)
 		{
+			GUILayout.BeginHorizontal();
 			GUILayout.TextField(u);
+			if(GUILayout.Button("Copy", GUILayout.Width(60))){
+				CopyToClipboard(u);
+			}
+			GUILayout.EndHorizontal();
 			CopyToClipboard(u);
+		}
+
+		if(g.urls.Count > 1){
+			GUILayout.BeginHorizontal();
+			GUILayout.FlexibleSpace();
+			if(GUILayout.Button("Copy all", GUILayout.Width(60))){
+				status = "All URLs copied to clipboard!";
+			}
+			GUILayout.EndHorizontal();
 		}
 
 		GUILayout.Space(5);

@@ -11,6 +11,8 @@ public class Greybox : MonoBehaviour {
 	[HideInInspector]
 	public List<string> urls = new List<string>();
 
+	[HideInInspector]
+	public bool canTakeScreenshot = true;
 	// public bool verbose = true;
 	// public bool storeCapturesLocally = true;
 	
@@ -21,9 +23,12 @@ public class Greybox : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.Space)){
+
+	}
+
+	public void TakeScreenShot(){
 			urls.Add("http://greybox.it/lsdfe4");
-		}
+			canTakeScreenshot = false;
 	}
 
 	public void ClearURLs(){
