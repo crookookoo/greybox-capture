@@ -22,12 +22,13 @@ public class Uploader : MonoBehaviour
     [HideInInspector]
     public string FilePath;
     
-    public string Token = "oZNZh1S41yghfzuv6PnVdakGlij1";
+    public string Token = "oZNZh1S41yghfzuv6PnVdakGlij1";  
+    public KeyCode screenShotKey = KeyCode.F1;
+    public bool keepImagesLocally = false;
+
     private string invalidToken = "HUMajetpFtWJcgaB8FcNAqwi0rG3";
     private string PUTurl = "https://us-central1-graybox-219f6.cloudfunctions.net/upload";
   
-    public KeyCode screenShotKey = KeyCode.F1;
-
 
     public void UploadFile()
     {
