@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+namespace FBCapture
+{
 [CustomEditor(typeof(Greybox))]
 public class CustomGreyboxInspector : Editor {
 
 	private string status = "";
 
 	public override void OnInspectorGUI(){
-		// base.OnInspectorGUI();
-		DrawDefaultInspector();
 
-		// GUILayoutButton Capture = new GUILayoutButton("Capture Screenshot");
+		DrawDefaultInspector();
 		
 		GUILayout.Space(5);
 
@@ -80,4 +80,5 @@ public class CustomGreyboxInspector : Editor {
 		
 		g.state = "URL copied to clipboard!";
 	}
+}
 }
