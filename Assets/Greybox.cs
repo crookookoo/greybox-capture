@@ -36,6 +36,7 @@ public class Greybox : MonoBehaviour {
 	private RenderTexture cubemapTex;
 	private RenderTexture outputTex;  // equirect or cubemap ends up here
 	private RenderTexture externalTex;
+	private RenderTexture equirect;	
     private Camera camera;
 	private string screenshotFullPath;
 
@@ -47,8 +48,8 @@ public class Greybox : MonoBehaviour {
 	void Start () {
 		camera = GetComponent<Camera>();
     	cubemapTex = new RenderTexture(2048, 2048, 0);
-            cubemapTex.dimension = UnityEngine.Rendering.TextureDimension.Cube;
-            cubemapTex.hideFlags = HideFlags.HideAndDontSave;
+        cubemapTex.dimension = UnityEngine.Rendering.TextureDimension.Cube;
+        cubemapTex.hideFlags = HideFlags.HideAndDontSave;
 
 		if (string.IsNullOrEmpty(outputPath)) {
 			outputPath = System.IO.Path.Combine(Directory.GetCurrentDirectory(), "Gallery");
@@ -73,6 +74,29 @@ public class Greybox : MonoBehaviour {
 		// 	urls.Add("http://greybox.it/lsdfe4");
 		// 	canTakeScreenshot = false;
 	}
+
+	void TakeScreenShotNative(){
+		camera.stereoSeparation = 0.064; // Eye separation (IPD) of 64mm.
+		camera.RenderToCubemap(cubemapTex, 63, Camera.MonoOrStereoscopicEye.Left);
+		cubemapTex.ConvertToEquirect(equirect, Camera.MonoOrStereoscopicEye.Left);
+		
+		FilePath = ScreenShotName(4096, 2048);
+		DumpRenderTexture(cubemapTex, FilePath);
+
+	}
+
+    void DumpRenderTexture(RenderTexture rt, string jpgOutPath)
+    {
+        var oldRT = RenderTexture.active;
+
+        var tex = new Texture2D(rt.width, rt.height);
+        RenderTexture.active = rt;
+        tex.ReadPixels(new Rect(0, 0, rt.width, rt.height), 0, 0);
+        tex.Apply();
+
+        File.WriteAllBytes(jpgOutPath, tex.EncodeToJPG());
+        RenderTexture.active = oldRT;
+    }
 
 	public void TakeScreenshot(int width, int height, string screenshotPathName = "")
 	{
