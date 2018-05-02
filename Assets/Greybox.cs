@@ -11,6 +11,8 @@ namespace FBCapture
 [RequireComponent(typeof(Camera))]
 public class Greybox : MonoBehaviour {
 	public string token;
+	
+	[SearchableEnum]
 	public KeyCode screenshotHotkey = KeyCode.F1;
 	public bool keepLocalImageCopies = false;
 
@@ -76,7 +78,7 @@ public class Greybox : MonoBehaviour {
 	}
 
 	void TakeScreenShotNative(){
-		camera.stereoSeparation = 0.064; // Eye separation (IPD) of 64mm.
+		camera.stereoSeparation = 0.064f; // Eye separation (IPD) of 64mm.
 		camera.RenderToCubemap(cubemapTex, 63, Camera.MonoOrStereoscopicEye.Left);
 		cubemapTex.ConvertToEquirect(equirect, Camera.MonoOrStereoscopicEye.Left);
 		
