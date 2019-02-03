@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-namespace FBCapture
+namespace GBXT
 {
 [CustomEditor(typeof(Greybox))]
 public class CustomGreyboxInspector : Editor {
@@ -14,14 +14,16 @@ public class CustomGreyboxInspector : Editor {
 
 		DrawDefaultInspector();
 		
-		GUILayout.Space(5);
+		GUILayout.Space(10);
 
 		Greybox g = target as Greybox;
-
+		
 		GUI.enabled = Application.isPlaying && TokenValid(g.token) && g.canTakeScreenshot;
 
+		GUI.contentColor = Color.green;
+
 		if(GUILayout.Button("Capture Screenshot", GUILayout.Height(24))){
-			g.TakeScreenShot();
+			g.TakeScreenShotNative();
 		}
 
 		GUI.enabled = true;
@@ -60,7 +62,7 @@ public class CustomGreyboxInspector : Editor {
 			GUILayout.EndHorizontal();
 		}
 
-		GUILayout.Space(5);
+		//GUILayout.Space(5);
 	
 
 	}

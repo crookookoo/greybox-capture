@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c3ff681e-4b19-4de8-bc6b-ed6e59383ba8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.vrs-unity/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.vrs-unity/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.vrs-unity/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.vrs-unity/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/Editor/CustomCaptureOptionInspector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/Editor/CustomCaptureOptionInspector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/Editor/CustomGBXTInspector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/Editor/CustomGBXTInspector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/Editor/CustomGreyboxInspector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/Editor/CustomGreyboxInspector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/Editor/greybox-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/Editor/greybox-icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/EncoderObject.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/EncoderObject.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/FBCapture.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/FBCapture.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/Script.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/Script/CaptureOption.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/Script/CaptureOption.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/Script/FPSScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/Script/FPSScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/Script/NonSurroundCapture.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/Script/NonSurroundCapture.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/Script/SurroundCapture.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/Script/SurroundCapture.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/Script/Uploader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/Script/Uploader.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/Script/ftp.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/Script/ftp.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/CardCubeMaterial.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/CardCubeMaterial.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/CubemapDisplay.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/CubemapDisplay.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/CubemapPreview.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/CubemapPreview.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/CubemapToCylindrical.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/CubemapToCylindrical.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/CubemapToEquirect.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/CubemapToEquirect.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/CubemapToEquirect.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/CubemapToEquirect.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/Downsample.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/Downsample.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/Downsample.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/Downsample.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/FlippingTexture.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/FlippingTexture.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/FlippingTexture.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/FlippingTexture.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/OVRCubemapToEquirect.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/OVRCubemapToEquirect.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/OVRDownsample.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Greybox/EncodePackage/materials/OVRDownsample.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SimpleTownLite/_Demo/Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SimpleTownLite/_Demo/Demo.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SimpleTownLite/_Models/apartment_large_thin_short.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SimpleTownLite/_Models/apartment_large_thin_short.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FBCaptureSDK.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FBCaptureSDK.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnityPackageManager/manifest.json" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Plugins/Greybox/Editor/CustomGreyboxInspector.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-697">
+              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+              <folding>
+                <marker date="1549211916545" expanded="false" signature="6:97" ph="..." />
+                <marker date="1549211916545" expanded="true" signature="113:1765" ph="{...}" />
+                <marker date="1549211916545" expanded="true" signature="193:1763" ph="{...}" />
+                <marker date="1549211916545" expanded="true" signature="264:1454" ph="{...}" />
+                <marker date="1549211916545" expanded="true" signature="543:577" ph="{...}" />
+                <marker date="1549211916545" expanded="true" signature="826:852" ph="{...}" />
+                <marker date="1549211916545" expanded="true" signature="990:1193" ph="{...}" />
+                <marker date="1549211916545" expanded="true" signature="1106:1136" ph="{...}" />
+                <marker date="1549211916545" expanded="true" signature="1217:1423" ph="{...}" />
+                <marker date="1549211916545" expanded="true" signature="1337:1389" ph="{...}" />
+                <marker date="1549211916545" expanded="true" signature="1492:1553" ph="{...}" />
+                <marker date="1549211916545" expanded="true" signature="1596:1761" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Plugins/Greybox/Scripts/Greybox.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="167" column="12" lean-forward="true" selection-start-line="167" selection-start-column="12" selection-end-line="167" selection-end-column="12" />
+              <folding>
+                <marker date="1549220068344" expanded="true" signature="6:177" ph="..." />
+                <marker date="1549220068344" expanded="true" signature="193:6644" ph="{...}" />
+                <marker date="1549220068344" expanded="true" signature="234:6642" ph="{...}" />
+                <marker date="1549220068344" expanded="true" signature="1585:2362" ph="{...}" />
+                <marker date="1549220068344" expanded="true" signature="1643:1694" ph="{...}" />
+                <marker date="1549220068344" expanded="true" signature="1702:1788" ph="{...}" />
+                <marker date="1549220068344" expanded="true" signature="2126:2356" ph="{...}" />
+                <marker date="1549220068344" expanded="true" signature="2297:2351" ph="{...}" />
+                <marker date="1549220068344" expanded="true" signature="2383:2464" ph="{...}" />
+                <marker date="1549220068344" expanded="true" signature="2426:2460" ph="{...}" />
+                <marker date="1549220068344" expanded="false" signature="2467:2754" ph="/* public void TakeScreenShot(){ ... */" />
+                <marker date="1549220068344" expanded="true" signature="2793:3216" ph="{...}" />
+                <marker date="1549220068344" expanded="true" signature="3287:3734" ph="{...}" />
+                <marker date="1549220068344" expanded="true" signature="3737:4077" ph="/* public void TakeScreenshot(int width, int height, string screenshotPathName = &quot;&quot;) ... */" />
+                <marker date="1549220068344" expanded="true" signature="4107:4129" ph="{...}" />
+                <marker date="1549220068344" expanded="true" signature="4134:4830" ph="/* IEnumerator CaptureScreenshot(int width, int height) { ... */" />
+                <marker date="1549220068344" expanded="true" signature="4859:5886" ph="{...}" />
+                <marker date="1549220068344" expanded="true" signature="5495:5527" ph="{...}" />
+                <marker date="1549220068344" expanded="true" signature="5527:5606" ph="{...}" />
+                <marker date="1549220068344" expanded="true" signature="5608:5882" ph="/* WWW w = new WWW(POSTurl, form.data, headers); ... */" />
+                <marker date="1549220068344" expanded="true" signature="5889:6459" ph="/* void SetOutputSize(int width, int height) { ... */" />
+                <marker date="1549220068344" expanded="true" signature="6508:6635" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>equirect</find>
+      <find>camer</find>
+      <find>UploadPost</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D616BE05-755D-41A0-8981-0B5C14E4DD50/8a/0101e60a/RenderTexture.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Greybox/Editor/CustomGreyboxInspector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Greybox/EncodePackage/Script/Uploader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Greybox/Scripts/Greybox.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Greybox/Editor/CustomGreyboxInspector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Greybox.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Greybox/Editor/CustomGreyboxInspector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Greybox/Scripts/Greybox.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="riderModule/invalid/Default Android Facet" />
+    </ignored-facets>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1932" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
+              <item name="Greybox" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
+              <item name="Greybox" type="1045f7f1:UnityExplorerNode" />
+              <item name="RenderTexture" type="1045f7f1:UnityExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-hidden-items" value="false" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3ff681e-4b19-4de8-bc6b-ed6e59383ba8" name="Default Changelist" comment="" />
+      <created>1549194526231</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549194526231</updated>
+      <workItem from="1549194530900" duration="15902000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="15902000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="0" width="1932" height="1047" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Captures" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18108974" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Android Profiler" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Performance Profiler" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="NuGet" />
+      <window_info anchor="bottom" id="Logcat" />
+      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Unity" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Unit Tests Coverage" />
+      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/Greybox/Editor/CustomGreyboxInspector.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Greybox/EncodePackage/Script/CaptureOption.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Greybox.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D616BE05-755D-41A0-8981-0B5C14E4DD50/8a/0101e60a/RenderTexture.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="133" column="44" selection-start-line="133" selection-start-column="44" selection-end-line="133" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Greybox/Editor/CustomGreyboxInspector.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-697">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+          <folding>
+            <marker date="1549211916545" expanded="false" signature="6:97" ph="..." />
+            <marker date="1549211916545" expanded="true" signature="113:1765" ph="{...}" />
+            <marker date="1549211916545" expanded="true" signature="193:1763" ph="{...}" />
+            <marker date="1549211916545" expanded="true" signature="264:1454" ph="{...}" />
+            <marker date="1549211916545" expanded="true" signature="543:577" ph="{...}" />
+            <marker date="1549211916545" expanded="true" signature="826:852" ph="{...}" />
+            <marker date="1549211916545" expanded="true" signature="990:1193" ph="{...}" />
+            <marker date="1549211916545" expanded="true" signature="1106:1136" ph="{...}" />
+            <marker date="1549211916545" expanded="true" signature="1217:1423" ph="{...}" />
+            <marker date="1549211916545" expanded="true" signature="1337:1389" ph="{...}" />
+            <marker date="1549211916545" expanded="true" signature="1492:1553" ph="{...}" />
+            <marker date="1549211916545" expanded="true" signature="1596:1761" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Greybox/Scripts/Greybox.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="167" column="12" lean-forward="true" selection-start-line="167" selection-start-column="12" selection-end-line="167" selection-end-column="12" />
+          <folding>
+            <marker date="1549220068344" expanded="true" signature="6:177" ph="..." />
+            <marker date="1549220068344" expanded="true" signature="193:6644" ph="{...}" />
+            <marker date="1549220068344" expanded="true" signature="234:6642" ph="{...}" />
+            <marker date="1549220068344" expanded="true" signature="1585:2362" ph="{...}" />
+            <marker date="1549220068344" expanded="true" signature="1643:1694" ph="{...}" />
+            <marker date="1549220068344" expanded="true" signature="1702:1788" ph="{...}" />
+            <marker date="1549220068344" expanded="true" signature="2126:2356" ph="{...}" />
+            <marker date="1549220068344" expanded="true" signature="2297:2351" ph="{...}" />
+            <marker date="1549220068344" expanded="true" signature="2383:2464" ph="{...}" />
+            <marker date="1549220068344" expanded="true" signature="2426:2460" ph="{...}" />
+            <marker date="1549220068344" expanded="false" signature="2467:2754" ph="/* public void TakeScreenShot(){ ... */" />
+            <marker date="1549220068344" expanded="true" signature="2793:3216" ph="{...}" />
+            <marker date="1549220068344" expanded="true" signature="3287:3734" ph="{...}" />
+            <marker date="1549220068344" expanded="true" signature="3737:4077" ph="/* public void TakeScreenshot(int width, int height, string screenshotPathName = &quot;&quot;) ... */" />
+            <marker date="1549220068344" expanded="true" signature="4107:4129" ph="{...}" />
+            <marker date="1549220068344" expanded="true" signature="4134:4830" ph="/* IEnumerator CaptureScreenshot(int width, int height) { ... */" />
+            <marker date="1549220068344" expanded="true" signature="4859:5886" ph="{...}" />
+            <marker date="1549220068344" expanded="true" signature="5495:5527" ph="{...}" />
+            <marker date="1549220068344" expanded="true" signature="5527:5606" ph="{...}" />
+            <marker date="1549220068344" expanded="true" signature="5608:5882" ph="/* WWW w = new WWW(POSTurl, form.data, headers); ... */" />
+            <marker date="1549220068344" expanded="true" signature="5889:6459" ph="/* void SetOutputSize(int width, int height) { ... */" />
+            <marker date="1549220068344" expanded="true" signature="6508:6635" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
