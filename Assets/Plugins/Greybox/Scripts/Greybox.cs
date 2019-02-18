@@ -124,7 +124,7 @@ namespace GBXT
 			Debug.Log("Saved JPG to a file");
 			
 			FilePath = jpgOutPath;
-			StartCoroutine(UploadPost());
+			StartCoroutine(UploadPost(tex));
 			
 		}
 	
@@ -162,71 +162,29 @@ namespace GBXT
 //			}
 //		}
 	
-		IEnumerator UploadPost(){
+		IEnumerator UploadPost(Texture2D tex){
 
-			Debug.Log("Starting upload...");
-			
 			WWWForm form = new WWWForm();
-			Debug.Log("Reading from: " + FilePath);
-			form.AddBinaryData("file", File.ReadAllBytes(@FilePath), "screenShot.jpg", "image/jpeg");
-			
-			Dictionary<string, string> headers = form.headers;
-			
-			headers["x-token"] = token;
-			//headers["debug"] = "lol";
-			headers["content-type"] = "application/json; charset=utf-8";
-			
-//			UnityWebRequest www = UnityWebRequest.Post(POSTurl, form);
-//			www.SetRequestHeader("x-token", token);
-//			www.SetRequestHeader("content-type", "application/json; charset=utf-8");
-//
-//			yield return www.SendWebRequest();
-//			
-//			if(www.isNetworkError || www.isHttpError) {
-//				Debug.Log(www.error);
-//			}
-//			else {
-//				Debug.Log("Form upload complete!");
-//			}
 
-			WWW w = new WWW(POSTurl, form.data, headers);
-			// UnityWebRequest www = UnityWebRequest.Put(PUTurl, rawData);
+			byte[] bytes = tex.EncodeToPNG();
+			
+			form.AddBinaryData("file", bytes, "screenShot.jpg", "image/jpeg");
+						
+			using (var w = UnityWebRequest.Post(POSTurl, form))
+			{
 				
-			yield return w;
-			print(w.text);
-
-//			if (!string.IsNullOrEmpty(w.error)) {
-//				print(w.text);
-//			}
-//			else {
-//				print(w.text);
-//			}
+				w.SetRequestHeader("x-token", token);
+				
+				yield return w.SendWebRequest();
+				if (w.isNetworkError || w.isHttpError) {
+					print(w.downloadHandler.text);
+				}
+				else {
+					print("Finished Uploading Screenshot");
+				}
+			}
 		}
 	
-//		void SetOutputSize(int width, int height) {
-//	
-//			if (width == lastWidth && height == lastHeight) {
-//				return;
-//			}
-//			else {
-//				lastWidth = width;
-//				lastHeight = height;
-//			}
-//	
-//			if (outputTex != null) {
-//				Destroy(outputTex);
-//			}
-//	
-//			outputTex = new RenderTexture(width, height, 0);
-//			outputTex.hideFlags = HideFlags.HideAndDontSave;
-//	
-//			if (externalTex != null) {
-//				Destroy(externalTex);
-//			}
-//	
-//			externalTex = new RenderTexture(width, height, 0);
-//			externalTex.hideFlags = HideFlags.HideAndDontSave;
-//		}
 	
 		string ScreenShotName(int width, int height){            
 	
