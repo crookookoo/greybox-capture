@@ -120,7 +120,7 @@ namespace GBXT
 				
 			File.WriteAllBytes(jpgOutPath, tex.EncodeToJPG());
 			RenderTexture.active = oldRT;
-	
+
 			Debug.Log("Saved JPG to a file");
 			
 			FilePath = jpgOutPath;
@@ -167,7 +167,7 @@ namespace GBXT
 			Debug.Log("Starting upload...");
 			
 			WWWForm form = new WWWForm();
-					
+			Debug.Log("Reading from: " + FilePath);
 			form.AddBinaryData("file", File.ReadAllBytes(@FilePath), "screenShot.jpg", "image/jpeg");
 			
 			Dictionary<string, string> headers = form.headers;
@@ -176,26 +176,24 @@ namespace GBXT
 			//headers["debug"] = "lol";
 			headers["content-type"] = "application/json; charset=utf-8";
 			
-			UnityWebRequest www = UnityWebRequest.Post(POSTurl, form);
-			www.SetRequestHeader("x-token", token);
-			www.SetRequestHeader("content-type", "application/json; charset=utf-8");
+//			UnityWebRequest www = UnityWebRequest.Post(POSTurl, form);
+//			www.SetRequestHeader("x-token", token);
+//			www.SetRequestHeader("content-type", "application/json; charset=utf-8");
+//
+//			yield return www.SendWebRequest();
+//			
+//			if(www.isNetworkError || www.isHttpError) {
+//				Debug.Log(www.error);
+//			}
+//			else {
+//				Debug.Log("Form upload complete!");
+//			}
 
-			yield return www.SendWebRequest();
-			
-			if(www.isNetworkError || www.isHttpError) {
-				Debug.Log(www.error);
-			}
-			else {
-				Debug.Log("Form upload complete!");
-//				Debug.Log(www.);
-
-			}
-
-//			WWW w = new WWW(POSTurl, form.data, headers);
+			WWW w = new WWW(POSTurl, form.data, headers);
 			// UnityWebRequest www = UnityWebRequest.Put(PUTurl, rawData);
 				
-//			yield return w;
-//			print(w.text);
+			yield return w;
+			print(w.text);
 
 //			if (!string.IsNullOrEmpty(w.error)) {
 //				print(w.text);
