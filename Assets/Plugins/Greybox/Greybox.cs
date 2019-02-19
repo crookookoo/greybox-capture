@@ -45,8 +45,7 @@ namespace GBXT
 		
 		public struct SimpleJsonData
 		{
-			public string key;
-			public string val;
+			public string url;
 		}
 
 		// Use this for initialization
@@ -137,9 +136,12 @@ namespace GBXT
 				yield return w.SendWebRequest();
 
 					SimpleJsonData response = JsonUtility.FromJson<SimpleJsonData>(w.downloadHandler.text);
-					print(response.key);
-//					print(w.downloadHandler.data);
-				
+					print(w.downloadHandler.text);
+					print(response.url);
+					urls.Add(response.url);
+
+					//					print(w.downloadHandler.data);
+
 			}
 		}
 	

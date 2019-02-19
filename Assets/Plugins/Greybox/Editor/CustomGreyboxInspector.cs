@@ -37,33 +37,30 @@ public class CustomGreyboxInspector : Editor {
 		if(Application.isPlaying && TokenValid(g.token)){
 			status = g.state;
 		}
+		
+		var style = new GUIStyle(GUI.skin.label);
+		style.normal.textColor = Color.blue;
+		GUI.contentColor = Color.red;
+		GUILayout.Label(status,style);
 
-		GUILayout.Label(status);
 		GUILayout.Space(5);
 
-		// if(Application.isPlaying) GUILayout.Label("lols");
 		foreach (string u in g.urls)
 		{
 			GUILayout.BeginHorizontal();
 			GUILayout.TextField(u);
-			if(GUILayout.Button("Copy", GUILayout.Width(60))){
-				CopyToClipboard(u);
-			}
 			GUILayout.EndHorizontal();
-			CopyToClipboard(u);
+			//CopyToClipboard(u);
 		}
 
 		if(g.urls.Count > 1){
 			GUILayout.BeginHorizontal();
 			GUILayout.FlexibleSpace();
 			if(GUILayout.Button("Copy all", GUILayout.Width(60))){
-				status = "All URLs copied to clipboard!";
+				CopySetToClipboard(g.urls);
 			}
 			GUILayout.EndHorizontal();
 		}
-
-		//GUILayout.Space(5);
-	
 
 	}
 
@@ -81,6 +78,29 @@ public class CustomGreyboxInspector : Editor {
 		te.Copy();
 		
 		g.state = "URL copied to clipboard!";
+	}
+
+	private void CopySetToClipboard(List<string> lines)
+	{
+		Greybox g = target as Greybox;
+		
+		TextEditor te = new TextEditor();
+
+		string sum = "";
+
+		foreach (var line in lines)
+		{
+			sum += line + "\n";
+		}
+		
+		Debug.Log(sum);
+		
+		te.text = sum;
+		te.SelectAll();
+		te.Copy();
+		
+		g.state = "All URLs are copied to clipboard!";
+
 	}
 }
 }
