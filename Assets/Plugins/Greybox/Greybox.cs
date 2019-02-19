@@ -41,11 +41,22 @@ namespace GBXT
 				
 		private RenderTexture cubemapTex;
 		private RenderTexture equirect;	
-		private string screenshotFullPath;	
+		private string screenshotFullPath, lastScreenshotName;	
 		
 		public struct SimpleJsonData
 		{
 			public string url;
+		}
+		
+		public struct ErrorJsonData
+		{
+			public string error;
+		}
+		
+		public struct ServerResponse
+		{
+			public string message;
+			public bool isError;
 		}
 
 		// Use this for initialization
@@ -83,9 +94,7 @@ namespace GBXT
 		}
 	
 	
-		public void TakeScreenShotNative(){
-			Debug.Log("Starting native screenshot capture...");
-			
+		public void TakeScreenShotNative(){	
 			camera.stereoSeparation = 0.064f; // Eye separation (IPD) of 64mm.
 			camera.RenderToCubemap(cubemapTex, 63, Camera.MonoOrStereoscopicEye.Right);
 			cubemapTex.ConvertToEquirect(equirect, Camera.MonoOrStereoscopicEye.Mono);
@@ -105,14 +114,18 @@ namespace GBXT
 			RenderTexture.active = rt;
 			tex.ReadPixels(new Rect(0, 0, rt.width, rt.height), 0, 0);
 			tex.Apply();
-				
-			File.WriteAllBytes(jpgOutPath, tex.EncodeToJPG());
+
+			byte[] bytes = tex.EncodeToJPG();
+
+			File.WriteAllBytes(jpgOutPath, bytes);
 			RenderTexture.active = oldRT;
 
-			Debug.Log("Saved JPG to a file");
+			
+			
+			Debug.Log("Greybox saved JPG locally: " + lastScreenshotName);
 			
 			FilePath = jpgOutPath;
-			StartCoroutine(UploadPost(tex));
+			StartCoroutine(UploadPost(bytes));
 			
 		}
 	
@@ -120,11 +133,9 @@ namespace GBXT
 			urls.Clear();
 		}
 				
-		IEnumerator UploadPost(Texture2D tex){
+		IEnumerator UploadPost(byte[] bytes){
 
 			WWWForm form = new WWWForm();
-
-			byte[] bytes = tex.EncodeToJPG();
 			
 			form.AddBinaryData("file", bytes, "screenShot.jpg", "image/jpeg");
 						
@@ -134,25 +145,30 @@ namespace GBXT
 				w.SetRequestHeader("x-token", token);
 				
 				yield return w.SendWebRequest();
-
+				
+				if (w.isNetworkError || w.isHttpError) {
+					ErrorJsonData response = JsonUtility.FromJson<ErrorJsonData>(w.downloadHandler.text);
+					Debug.Log("<color=maroon>Greybox error: " + response.error + "</color>");
+				}
+				else {
 					SimpleJsonData response = JsonUtility.FromJson<SimpleJsonData>(w.downloadHandler.text);
-					print(w.downloadHandler.text);
-					print(response.url);
+//					print(w.downloadHandler.text);
+					Debug.Log("<color=navy>Greybox upload complete: " + response.url + "</color>");
 					urls.Add(response.url);
-
-					//					print(w.downloadHandler.data);
-
+				}
 			}
 		}
 	
 		
 		
-		string ScreenShotName(int width, int height){            
-	
+		string ScreenShotName(int width, int height){        
+			lastScreenshotName = string.Format("{0}/{1}.jpg",
+				localImageFolder,
+				DateTime.Now.ToString("ddMMM-hh-mm-ss"));
 			return string.Format("{0}/{1}.jpg",
-					galleryFolder,
-					DateTime.Now.ToString("ddMMM-hh-mm-ss"));
-	
+				galleryFolder,
+				DateTime.Now.ToString("ddMMM-hh-mm-ss"));
+
 		}
 	}
 }
