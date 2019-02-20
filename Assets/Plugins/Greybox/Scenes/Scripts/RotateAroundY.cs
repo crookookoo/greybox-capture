@@ -17,7 +17,7 @@ namespace GBXT
         // Update is called once per frame
         void Update()
         {
-            transform.Rotate(Vector3.up, rotateSpeed * Time.deltaTime * 50);
+            transform.Rotate(Vector3.up, rotateSpeed * Time.deltaTime);
         }
     }
 
