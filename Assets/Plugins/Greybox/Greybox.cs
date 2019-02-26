@@ -52,14 +52,6 @@ namespace GBXT
 		{
 			public string error;
 		}
-		
-		public struct ServerResponse
-		{
-			public string message;
-			public bool isError;
-		}
-
-		// Use this for initialization
 		void Start () {
 			if (camera == null && GetComponent<Camera>() != null)
 			{
@@ -79,12 +71,10 @@ namespace GBXT
 			if (string.IsNullOrEmpty(galleryFolder)) {
 				galleryFolder = System.IO.Path.Combine(Directory.GetCurrentDirectory(), localImageFolder);
 			
-				// create the directory
 				if (!Directory.Exists(galleryFolder)) {
 					Directory.CreateDirectory(galleryFolder);
 				}
 			}
-	
 		}
 		
 		void Update () {
@@ -148,19 +138,17 @@ namespace GBXT
 				
 				if (w.isNetworkError || w.isHttpError) {
 					ErrorJsonData response = JsonUtility.FromJson<ErrorJsonData>(w.downloadHandler.text);
-					Debug.Log("<color=maroon>Greybox error: " + response.error + "</color>");
+					Debug.Log("<color=maroon>Greybox upload error: " + response.error + "</color>");
 				}
 				else {
 					SimpleJsonData response = JsonUtility.FromJson<SimpleJsonData>(w.downloadHandler.text);
-//					print(w.downloadHandler.text);
-					Debug.Log("<color=navy>Greybox upload complete: " + response.url + "</color>");
+					Debug.Log("<color=navy>Greybox upload complete: " + response.url + " (copied to clipboard)" + "</color>");
 					urls.Add(response.url);
+					CopyToClipboard(response.url);
 				}
 			}
 		}
 	
-		
-		
 		string ScreenShotName(int width, int height){        
 			lastScreenshotName = string.Format("{0}/{1}.jpg",
 				localImageFolder,
@@ -169,6 +157,18 @@ namespace GBXT
 				galleryFolder,
 				DateTime.Now.ToString("ddMMM-hh-mm-ss"));
 
+		}
+		
+		private void CopyToClipboard(string str){
+			TextEditor te = new TextEditor();
+			te.text = str;
+			te.SelectAll();
+			te.Copy();
+		
+			state = "URL is copied to clipboard!";
+			
+			if(urls.Count > 1) 
+				state = "Last URL is copied to clipboard!";
 		}
 	}
 }

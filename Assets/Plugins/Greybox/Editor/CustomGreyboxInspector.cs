@@ -40,7 +40,7 @@ public class CustomGreyboxInspector : Editor {
 		
 		var style = new GUIStyle(GUI.skin.label);
 		style.normal.textColor = Color.blue;
-		GUI.contentColor = Color.red;
+
 		GUILayout.Label(status,style);
 
 		GUILayout.Space(5);
@@ -92,9 +92,7 @@ public class CustomGreyboxInspector : Editor {
 		{
 			sum += line + "\n";
 		}
-		
-		Debug.Log(sum);
-		
+				
 		te.text = sum;
 		te.SelectAll();
 		te.Copy();
