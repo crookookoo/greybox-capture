@@ -1,5 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿// Copyright (c) 2019 Eugene Krivoruchko
+// Learn more at http://greybox.it
+
 using UnityEngine;
 
 namespace GBXT
@@ -8,11 +9,6 @@ namespace GBXT
     {
         [Range(0,20)]
         public float rotateSpeed = 1;
-        void Start()
-        {
-        
-        }
-
         void Update()
         {
             transform.Rotate(Vector3.up, rotateSpeed * Time.deltaTime);

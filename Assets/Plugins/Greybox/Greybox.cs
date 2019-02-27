@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿// Copyright (c) 2019 Eugene Krivoruchko
+// Learn more at http://greybox.it
+
+using UnityEngine;
 using UnityEngine.Networking;
 using System;
 using System.Collections;

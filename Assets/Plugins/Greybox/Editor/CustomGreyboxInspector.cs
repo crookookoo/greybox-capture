@@ -1,4 +1,7 @@
-﻿using System.Collections;
+﻿// Copyright (c) 2019 Eugene Krivoruchko
+// Learn more at http://greybox.it
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
