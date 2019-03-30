@@ -3,6 +3,7 @@
 
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -92,7 +93,7 @@ namespace GBXT
 			camera.RenderToCubemap(cubemapTex, 63, Camera.MonoOrStereoscopicEye.Right);
 			cubemapTex.ConvertToEquirect(equirect, Camera.MonoOrStereoscopicEye.Mono);
 			
-			FilePath = ScreenShotName(4096, 2048);
+			FilePath = ScreenShotName();
 			StartCoroutine(SaveRenderTexture(equirect, FilePath));
 			
 		}
@@ -152,14 +153,11 @@ namespace GBXT
 			}
 		}
 	
-		string ScreenShotName(int width, int height){        
-			lastScreenshotName = string.Format("{0}/{1}.jpg",
+		string ScreenShotName(){        
+			lastScreenshotName = SceneManager.GetActiveScene().name + string.Format("{0}/{1}.jpg",
 				localImageFolder,
 				DateTime.Now.ToString("ddMMM-hh-mm-ss"));
-			return string.Format("{0}/{1}.jpg",
-				galleryFolder,
-				DateTime.Now.ToString("ddMMM-hh-mm-ss"));
-
+			return lastScreenshotName;
 		}
 		
 		private void CopyToClipboard(string str){
