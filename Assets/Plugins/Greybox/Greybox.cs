@@ -154,8 +154,8 @@ namespace GBXT
 		}
 	
 		string ScreenShotName(){        
-			lastScreenshotName = SceneManager.GetActiveScene().name + string.Format("{0}/{1}.jpg",
-				localImageFolder,
+			lastScreenshotName = string.Format("{0}/{1}.jpg",
+				localImageFolder, SceneManager.GetActiveScene().name + " " +
 				DateTime.Now.ToString("ddMMM-hh-mm-ss"));
 			return lastScreenshotName;
 		}

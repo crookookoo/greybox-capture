@@ -48,18 +48,32 @@ public class CustomGreyboxInspector : Editor {
 
 		GUILayout.Space(5);
 
+		GUIStyle labelStyle = new GUIStyle(GUI.skin.textField);
+		labelStyle.alignment = TextAnchor.MiddleLeft;
+		
+		GUIStyle buttonStyle = new GUIStyle (GUI.skin.button); 
+		// do whatever you want with this style, e.g.:
+		buttonStyle.margin = new RectOffset(0,0,1,0);
+
 		foreach (string u in g.urls)
 		{
 			GUILayout.BeginHorizontal();
-			GUILayout.TextField(u);
+			GUILayout.TextField(u, labelStyle, GUILayout.Height(18));
+			if (GUILayout.Button("Open", buttonStyle ,GUILayout.Width(70), GUILayout.Height(18)))
+			{
+				Application.OpenURL(u);
+			}
 			GUILayout.EndHorizontal();
+			GUILayout.Space(2);
+
 			//CopyToClipboard(u);
 		}
 
 		if(g.urls.Count > 1){
+			GUILayout.Space(5);
 			GUILayout.BeginHorizontal();
 			GUILayout.FlexibleSpace();
-			if(GUILayout.Button("Copy all", GUILayout.Width(60))){
+			if(GUILayout.Button("Copy All", GUILayout.Width(70),GUILayout.Height(18))){
 				CopySetToClipboard(g.urls);
 			}
 			GUILayout.EndHorizontal();
