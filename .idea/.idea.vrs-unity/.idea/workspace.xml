@@ -2,32 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3ff681e-4b19-4de8-bc6b-ed6e59383ba8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-05-40-43.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-05-40-43.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-05-40-48.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-05-40-48.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-05-41-18.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-05-41-18.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-05-46-20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-05-46-20.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-05-48-41.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-05-48-41.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-05-55-57.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-05-55-57.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-07-29-35.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-07-29-35.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-07-34-44.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-07-34-44.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-07-35-29.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-07-35-29.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-07-37-16.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-07-37-16.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-07-37-56.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-07-37-56.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-07-54-43.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox Gallery/03Feb-07-54-43.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Scripts/Greybox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Greybox/Scripts/Greybox.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SimpleTownLite/_Demo/Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SimpleTownLite/_Demo/Demo.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.vrs-unity/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.vrs-unity/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.vrs-unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.vrs-unity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Editor/CustomGreyboxInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Greybox/Editor/CustomGreyboxInspector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Greybox/Prefabs/GreyboxCapture.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Greybox/Prefabs/GreyboxCapture.prefab" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,63 +19,76 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Plugins/Greybox/Editor/CustomGreyboxInspector.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="728">
-              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+            <state relative-caret-position="494">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
-                <marker date="1549211916545" expanded="false" signature="6:97" ph="..." />
-                <marker date="1549211916545" expanded="true" signature="113:1765" ph="{...}" />
-                <marker date="1549211916545" expanded="true" signature="193:1763" ph="{...}" />
-                <marker date="1549211916545" expanded="true" signature="264:1454" ph="{...}" />
-                <marker date="1549211916545" expanded="true" signature="543:577" ph="{...}" />
-                <marker date="1549211916545" expanded="true" signature="826:852" ph="{...}" />
-                <marker date="1549211916545" expanded="true" signature="990:1193" ph="{...}" />
-                <marker date="1549211916545" expanded="true" signature="1106:1136" ph="{...}" />
-                <marker date="1549211916545" expanded="true" signature="1217:1423" ph="{...}" />
-                <marker date="1549211916545" expanded="true" signature="1337:1389" ph="{...}" />
-                <marker date="1549211916545" expanded="true" signature="1492:1553" ph="{...}" />
-                <marker date="1549211916545" expanded="true" signature="1596:1761" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Plugins/Greybox/Scripts/Greybox.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-182">
-              <caret line="172" column="62" lean-forward="true" selection-start-line="172" selection-start-column="62" selection-end-line="172" selection-end-column="62" />
-              <folding>
-                <marker date="1549227351737" expanded="false" signature="6:177" ph="..." />
-                <marker date="1549227351737" expanded="true" signature="193:6674" ph="{...}" />
-                <marker date="1549227351737" expanded="true" signature="234:6672" ph="{...}" />
-                <marker date="1549227351737" expanded="true" signature="1585:2362" ph="{...}" />
-                <marker date="1549227351737" expanded="true" signature="1643:1694" ph="{...}" />
-                <marker date="1549227351737" expanded="true" signature="1702:1788" ph="{...}" />
-                <marker date="1549227351737" expanded="true" signature="2126:2356" ph="{...}" />
-                <marker date="1549227351737" expanded="true" signature="2297:2351" ph="{...}" />
-                <marker date="1549227351737" expanded="true" signature="2383:2464" ph="{...}" />
-                <marker date="1549227351737" expanded="true" signature="2426:2460" ph="{...}" />
-                <marker date="1549227351737" expanded="true" signature="2467:2754" ph="/* public void TakeScreenShot(){ ... */" />
-                <marker date="1549227351737" expanded="true" signature="2793:3216" ph="{...}" />
-                <marker date="1549227351737" expanded="true" signature="3287:3733" ph="{...}" />
-                <marker date="1549227351737" expanded="true" signature="3736:4076" ph="/* public void TakeScreenshot(int width, int height, string screenshotPathName = &quot;&quot;) ... */" />
-                <marker date="1549227351737" expanded="true" signature="4106:4128" ph="{...}" />
-                <marker date="1549227351737" expanded="true" signature="4133:4829" ph="/* IEnumerator CaptureScreenshot(int width, int height) { ... */" />
-                <marker date="1549227351737" expanded="true" signature="4858:5916" ph="{...}" />
-                <marker date="1549227351737" expanded="true" signature="5262:5642" ph="/* UnityWebRequest www = UnityWebRequest.Post(POSTurl, form); ... */" />
-                <marker date="1549227351737" expanded="true" signature="5802:5912" ph="/* if (!string.IsNullOrEmpty(w.error)) { ... */" />
-                <marker date="1549227351737" expanded="true" signature="5919:6489" ph="/* void SetOutputSize(int width, int height) { ... */" />
-                <marker date="1549227351737" expanded="true" signature="6538:6665" ph="{...}" />
+                <marker date="1556636264541" expanded="true" signature="0:75" ph="/* Copyright (c) 2019 Eugene Krivoruchko ... */" />
+                <marker date="1556636264541" expanded="false" signature="83:174" ph="..." />
+                <marker date="1556636264541" expanded="true" signature="190:2565" ph="{...}" />
+                <marker date="1556636264541" expanded="true" signature="270:2563" ph="{...}" />
+                <marker date="1556636264541" expanded="true" signature="341:1934" ph="{...}" />
+                <marker date="1556636264541" expanded="true" signature="620:648" ph="{...}" />
+                <marker date="1556636264541" expanded="true" signature="897:923" ph="{...}" />
+                <marker date="1556636264541" expanded="true" signature="1363:1670" ph="{...}" />
+                <marker date="1556636264541" expanded="true" signature="1549:1587" ph="{...}" />
+                <marker date="1556636264541" expanded="true" signature="1694:1930" ph="{...}" />
+                <marker date="1556636264541" expanded="true" signature="1858:1896" ph="{...}" />
+                <marker date="1556636264541" expanded="true" signature="1972:2033" ph="{...}" />
+                <marker date="1556636264541" expanded="true" signature="2076:2241" ph="{...}" />
+                <marker date="1556636264541" expanded="true" signature="2295:2561" ph="{...}" />
+                <marker date="1556636264541" expanded="true" signature="2421:2452" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://D:/GIT/UnityCollab/Bauhaus/Virtual Bauhaus/Assets/VoiceoverMarker.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="-364">
+              <caret line="100" column="4" lean-forward="true" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
+              <folding>
+                <marker date="1556636305486" expanded="true" signature="0:75" ph="/* Copyright (c) 2019 Eugene Krivoruchko ... */" />
+                <marker date="1556636305486" expanded="false" signature="83:251" ph="..." />
+                <marker date="1556636305486" expanded="true" signature="267:5259" ph="{...}" />
+                <marker date="1556636305486" expanded="true" signature="308:5257" ph="{...}" />
+                <marker date="1556636305486" expanded="true" signature="1332:1362" ph="{...}" />
+                <marker date="1556636305486" expanded="true" signature="1395:1427" ph="{...}" />
+                <marker date="1556636305486" expanded="true" signature="1444:2187" ph="{...}" />
+                <marker date="1556636305486" expanded="true" signature="1502:1553" ph="{...}" />
+                <marker date="1556636305486" expanded="true" signature="1561:1647" ph="{...}" />
+                <marker date="1556636305486" expanded="true" signature="1981:2183" ph="{...}" />
+                <marker date="1556636305486" expanded="true" signature="2124:2178" ph="{...}" />
+                <marker date="1556636305486" expanded="true" signature="2208:2283" ph="{...}" />
+                <marker date="1556636305486" expanded="true" signature="2251:2279" ph="{...}" />
+                <marker date="1556636305486" expanded="true" signature="2316:2642" ph="{...}" />
+                <marker date="1556636305486" expanded="true" signature="2713:3308" ph="{...}" />
+                <marker date="1556636305486" expanded="true" signature="3368:3871" ph="{...}" />
+                <marker date="1556636305486" expanded="true" signature="3578:3835" ph="{...}" />
+                <marker date="1556636305486" expanded="true" signature="3623:3830" ph="{...}" />
+                <marker date="1556636305486" expanded="true" signature="3900:3922" ph="{...}" />
+                <marker date="1556636305486" expanded="true" signature="3966:4760" ph="{...}" />
+                <marker date="1556636305486" expanded="true" signature="4137:4756" ph="{...}" />
+                <marker date="1556636305486" expanded="true" signature="4280:4464" ph="{...}" />
+                <marker date="1556636305486" expanded="true" signature="4464:4751" ph="{...}" />
+                <marker date="1556636305486" expanded="true" signature="4788:4995" ph="{...}" />
+                <marker date="1556636305486" expanded="true" signature="5041:5254" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Plugins/Greybox/Scenes/Scripts/RotateAroundY.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+              <folding>
+                <marker date="1551271940210" expanded="true" signature="0:75" ph="/* Copyright (c) 2019 Eugene Krivoruchko ... */" />
+                <marker date="1551271940210" expanded="true" signature="111:349" ph="{...}" />
+                <marker date="1551271940210" expanded="true" signature="160:346" ph="{...}" />
+                <marker date="1551271940210" expanded="true" signature="248:340" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,6 +100,11 @@
       <find>equirect</find>
       <find>camer</find>
       <find>UploadPost</find>
+      <find>outputTex</find>
+      <find>externalTex</find>
+      <find>FilePath</find>
+      <find>galleryFolder</find>
+      <find>oldRT</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -115,18 +112,20 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D616BE05-755D-41A0-8981-0B5C14E4DD50/8a/0101e60a/RenderTexture.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Greybox/Scenes/Scripts/RotateAroundY.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://D:/GIT/UnityCollab/Bauhaus/Virtual Bauhaus/Assets/VoiceoverMarker.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/Greybox/Editor/CustomGreyboxInspector.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Greybox/EncodePackage/Script/Uploader.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Plugins/Greybox/Scripts/Greybox.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Greybox/Editor/CustomGreyboxInspector.cs" />
         <option value="$PROJECT_DIR$/Assets/Greybox.cs" />
-        <option value="$PROJECT_DIR$/Assets/Plugins/Greybox/Editor/CustomGreyboxInspector.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/Greybox/Scripts/Greybox.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Greybox/Scenes/Scripts/RotateAroundY.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Greybox/Editor/CustomGreyboxInspector.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox.cs" />
       </list>
     </option>
   </component>
@@ -136,10 +135,9 @@
     </ignored-facets>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-7" />
+    <option name="width" value="1932" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
@@ -147,6 +145,7 @@
     </navigator>
     <panes>
       <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -165,19 +164,11 @@
               <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
               <item name="Greybox" type="1045f7f1:UnityExplorerNode" />
             </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Plugins" type="1045f7f1:UnityExplorerNode" />
-              <item name="Greybox" type="1045f7f1:UnityExplorerNode" />
-              <item name="RenderTexture" type="1045f7f1:UnityExplorerNode" />
-            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-hidden-items" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
@@ -228,11 +219,16 @@
       <updated>1549194526231</updated>
       <workItem from="1549194530900" duration="15902000" />
       <workItem from="1549226183447" duration="3102000" />
+      <workItem from="1550509630098" duration="9401000" />
+      <workItem from="1551194190852" duration="5650000" />
+      <workItem from="1554028043761" duration="4932000" />
+      <workItem from="1554897301414" duration="1433000" />
+      <workItem from="1556623120419" duration="11433000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19004000" />
+    <option name="totallyTimeSpent" value="51853000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -244,10 +240,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="32767" y="32767" width="3852" height="1092" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.089398734" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.088541664" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -307,61 +303,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Greybox/Editor/CustomGreyboxInspector.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-          <folding>
-            <marker date="1549211916545" expanded="false" signature="6:97" ph="..." />
-            <marker date="1549211916545" expanded="true" signature="113:1765" ph="{...}" />
-            <marker date="1549211916545" expanded="true" signature="193:1763" ph="{...}" />
-            <marker date="1549211916545" expanded="true" signature="264:1454" ph="{...}" />
-            <marker date="1549211916545" expanded="true" signature="543:577" ph="{...}" />
-            <marker date="1549211916545" expanded="true" signature="826:852" ph="{...}" />
-            <marker date="1549211916545" expanded="true" signature="990:1193" ph="{...}" />
-            <marker date="1549211916545" expanded="true" signature="1106:1136" ph="{...}" />
-            <marker date="1549211916545" expanded="true" signature="1217:1423" ph="{...}" />
-            <marker date="1549211916545" expanded="true" signature="1337:1389" ph="{...}" />
-            <marker date="1549211916545" expanded="true" signature="1492:1553" ph="{...}" />
-            <marker date="1549211916545" expanded="true" signature="1596:1761" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Greybox/Scripts/Greybox.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-182">
-          <caret line="172" column="62" lean-forward="true" selection-start-line="172" selection-start-column="62" selection-end-line="172" selection-end-column="62" />
-          <folding>
-            <marker date="1549227351737" expanded="false" signature="6:177" ph="..." />
-            <marker date="1549227351737" expanded="true" signature="193:6674" ph="{...}" />
-            <marker date="1549227351737" expanded="true" signature="234:6672" ph="{...}" />
-            <marker date="1549227351737" expanded="true" signature="1585:2362" ph="{...}" />
-            <marker date="1549227351737" expanded="true" signature="1643:1694" ph="{...}" />
-            <marker date="1549227351737" expanded="true" signature="1702:1788" ph="{...}" />
-            <marker date="1549227351737" expanded="true" signature="2126:2356" ph="{...}" />
-            <marker date="1549227351737" expanded="true" signature="2297:2351" ph="{...}" />
-            <marker date="1549227351737" expanded="true" signature="2383:2464" ph="{...}" />
-            <marker date="1549227351737" expanded="true" signature="2426:2460" ph="{...}" />
-            <marker date="1549227351737" expanded="true" signature="2467:2754" ph="/* public void TakeScreenShot(){ ... */" />
-            <marker date="1549227351737" expanded="true" signature="2793:3216" ph="{...}" />
-            <marker date="1549227351737" expanded="true" signature="3287:3733" ph="{...}" />
-            <marker date="1549227351737" expanded="true" signature="3736:4076" ph="/* public void TakeScreenshot(int width, int height, string screenshotPathName = &quot;&quot;) ... */" />
-            <marker date="1549227351737" expanded="true" signature="4106:4128" ph="{...}" />
-            <marker date="1549227351737" expanded="true" signature="4133:4829" ph="/* IEnumerator CaptureScreenshot(int width, int height) { ... */" />
-            <marker date="1549227351737" expanded="true" signature="4858:5916" ph="{...}" />
-            <marker date="1549227351737" expanded="true" signature="5262:5642" ph="/* UnityWebRequest www = UnityWebRequest.Post(POSTurl, form); ... */" />
-            <marker date="1549227351737" expanded="true" signature="5802:5912" ph="/* if (!string.IsNullOrEmpty(w.error)) { ... */" />
-            <marker date="1549227351737" expanded="true" signature="5919:6489" ph="/* void SetOutputSize(int width, int height) { ... */" />
-            <marker date="1549227351737" expanded="true" signature="6538:6665" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Greybox/Scripts/Greybox.cs" />
     <entry file="file://D:/GIT/UnityCollab/Bauhaus/Virtual Bauhaus/Assets/VoiceoverMarker.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Greybox/Editor/CustomGreyboxInspector.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <marker date="1556636264541" expanded="true" signature="0:75" ph="/* Copyright (c) 2019 Eugene Krivoruchko ... */" />
+            <marker date="1556636264541" expanded="false" signature="83:174" ph="..." />
+            <marker date="1556636264541" expanded="true" signature="190:2565" ph="{...}" />
+            <marker date="1556636264541" expanded="true" signature="270:2563" ph="{...}" />
+            <marker date="1556636264541" expanded="true" signature="341:1934" ph="{...}" />
+            <marker date="1556636264541" expanded="true" signature="620:648" ph="{...}" />
+            <marker date="1556636264541" expanded="true" signature="897:923" ph="{...}" />
+            <marker date="1556636264541" expanded="true" signature="1363:1670" ph="{...}" />
+            <marker date="1556636264541" expanded="true" signature="1549:1587" ph="{...}" />
+            <marker date="1556636264541" expanded="true" signature="1694:1930" ph="{...}" />
+            <marker date="1556636264541" expanded="true" signature="1858:1896" ph="{...}" />
+            <marker date="1556636264541" expanded="true" signature="1972:2033" ph="{...}" />
+            <marker date="1556636264541" expanded="true" signature="2076:2241" ph="{...}" />
+            <marker date="1556636264541" expanded="true" signature="2295:2561" ph="{...}" />
+            <marker date="1556636264541" expanded="true" signature="2421:2452" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Greybox/Scenes/Scripts/RotateAroundY.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <folding>
+            <marker date="1551271940210" expanded="true" signature="0:75" ph="/* Copyright (c) 2019 Eugene Krivoruchko ... */" />
+            <marker date="1551271940210" expanded="true" signature="111:349" ph="{...}" />
+            <marker date="1551271940210" expanded="true" signature="160:346" ph="{...}" />
+            <marker date="1551271940210" expanded="true" signature="248:340" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/Greybox/Greybox.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-364">
+          <caret line="100" column="4" lean-forward="true" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
+          <folding>
+            <marker date="1556636305486" expanded="true" signature="0:75" ph="/* Copyright (c) 2019 Eugene Krivoruchko ... */" />
+            <marker date="1556636305486" expanded="false" signature="83:251" ph="..." />
+            <marker date="1556636305486" expanded="true" signature="267:5259" ph="{...}" />
+            <marker date="1556636305486" expanded="true" signature="308:5257" ph="{...}" />
+            <marker date="1556636305486" expanded="true" signature="1332:1362" ph="{...}" />
+            <marker date="1556636305486" expanded="true" signature="1395:1427" ph="{...}" />
+            <marker date="1556636305486" expanded="true" signature="1444:2187" ph="{...}" />
+            <marker date="1556636305486" expanded="true" signature="1502:1553" ph="{...}" />
+            <marker date="1556636305486" expanded="true" signature="1561:1647" ph="{...}" />
+            <marker date="1556636305486" expanded="true" signature="1981:2183" ph="{...}" />
+            <marker date="1556636305486" expanded="true" signature="2124:2178" ph="{...}" />
+            <marker date="1556636305486" expanded="true" signature="2208:2283" ph="{...}" />
+            <marker date="1556636305486" expanded="true" signature="2251:2279" ph="{...}" />
+            <marker date="1556636305486" expanded="true" signature="2316:2642" ph="{...}" />
+            <marker date="1556636305486" expanded="true" signature="2713:3308" ph="{...}" />
+            <marker date="1556636305486" expanded="true" signature="3368:3871" ph="{...}" />
+            <marker date="1556636305486" expanded="true" signature="3578:3835" ph="{...}" />
+            <marker date="1556636305486" expanded="true" signature="3623:3830" ph="{...}" />
+            <marker date="1556636305486" expanded="true" signature="3900:3922" ph="{...}" />
+            <marker date="1556636305486" expanded="true" signature="3966:4760" ph="{...}" />
+            <marker date="1556636305486" expanded="true" signature="4137:4756" ph="{...}" />
+            <marker date="1556636305486" expanded="true" signature="4280:4464" ph="{...}" />
+            <marker date="1556636305486" expanded="true" signature="4464:4751" ph="{...}" />
+            <marker date="1556636305486" expanded="true" signature="4788:4995" ph="{...}" />
+            <marker date="1556636305486" expanded="true" signature="5041:5254" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

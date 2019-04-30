@@ -19,10 +19,10 @@ namespace GBXT
 		
 		[Tooltip("Your unique Greybox token. Get one at http://greybox.it")]
 		public string token;
-		public string localImageFolder = "Assets/Plugins/Greybox/Greybox Gallery";
+		[SerializeField] private string localImageFolder = "Assets/Plugins/Greybox/Greybox Gallery";
 
 		[Tooltip("The hotkey alternative to the capture button below")]
-		public KeyCode screenshotHotkey = KeyCode.F1;
+		[SerializeField] private KeyCode screenshotHotkey = KeyCode.F1;
 
 		[HideInInspector]
 		public string state = "Ready";
@@ -33,11 +33,8 @@ namespace GBXT
 		[HideInInspector]
 		public bool canTakeScreenshot = true;
 	   
-		[HideInInspector]
-		public string FilePath;
-		
-		[HideInInspector]
-		public string galleryFolder;
+		private string FilePath;
+		private string galleryFolder;
 	
 		private string POSTurl = "https://us-central1-graybox-219f6.cloudfunctions.net/upload";
 	
@@ -83,19 +80,17 @@ namespace GBXT
 		
 		void Update () {
 			if(Input.GetKeyDown(screenshotHotkey)){
-				TakeScreenShotNative();
+				TakeScreenShot();
 			}
 		}
 	
-	
-		public void TakeScreenShotNative(){	
+		public void TakeScreenShot(){	
 			camera.stereoSeparation = 0.064f; // Eye separation (IPD) of 64mm.
-			camera.RenderToCubemap(cubemapTex, 63, Camera.MonoOrStereoscopicEye.Right);
+			camera.RenderToCubemap(cubemapTex, 63, Camera.MonoOrStereoscopicEye.Mono);
 			cubemapTex.ConvertToEquirect(equirect, Camera.MonoOrStereoscopicEye.Mono);
 			
 			FilePath = ScreenShotName();
 			StartCoroutine(SaveRenderTexture(equirect, FilePath));
-			
 		}
 	
 		IEnumerator SaveRenderTexture(RenderTexture rt, string jpgOutPath)
@@ -105,16 +100,18 @@ namespace GBXT
 			var oldRT = RenderTexture.active;
 	
 			var tex = new Texture2D(rt.width, rt.height);
+
+			float yAngle = camera.transform.eulerAngles.y;
+
 			RenderTexture.active = rt;
-			tex.ReadPixels(new Rect(0, 0, rt.width, rt.height), 0, 0);
+			tex.ReadPixels(new Rect(0, 0, rt.width, rt.height), 0, 0,false);
+			RotateEquirect(tex, yAngle);
 			tex.Apply();
 
 			byte[] bytes = tex.EncodeToJPG();
 
 			File.WriteAllBytes(jpgOutPath, bytes);
 			RenderTexture.active = oldRT;
-
-			
 			
 			Debug.Log("Greybox saved JPG locally: " + lastScreenshotName);
 			
@@ -122,7 +119,30 @@ namespace GBXT
 			StartCoroutine(UploadPost(bytes));
 			
 		}
-	
+
+		private void RotateEquirect(Texture2D tex, float yAngle)
+		{
+			int shift = Mathf.FloorToInt(yAngle * tex.width / 360);
+
+			Color32[] result = new Color32[tex.width * tex.height];
+			Color32[] original = tex.GetPixels32();
+			
+			for (int i = 0; i < tex.height; i++)
+			{
+				for (int j = 0; j < tex.width; j++)
+				{
+					int delta = j + shift;
+					
+					if (delta < 0) delta += tex.width;
+					if (delta >= tex.width) delta -= tex.width;
+					
+					result[i * tex.width + j] = original[i * tex.width + delta];
+				}
+			}
+			
+			tex.SetPixels32(result);
+		}
+		
 		public void ClearURLs(){
 			urls.Clear();
 		}

@@ -26,7 +26,7 @@ public class CustomGreyboxInspector : Editor {
 		GUI.contentColor = Color.green;
 
 		if(GUILayout.Button("Capture Screenshot", GUILayout.Height(24))){
-			g.TakeScreenShotNative();
+			g.TakeScreenShot();
 		}
 
 		GUI.enabled = true;

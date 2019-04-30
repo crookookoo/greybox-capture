@@ -11,6 +11,11 @@
               <e p="CustomGreyboxInspector.cs" t="Include" />
             </e>
             <e p="Greybox.cs" t="Include" />
+            <e p="Scenes" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="RotateAroundY.cs" t="Include" />
+              </e>
+            </e>
           </e>
         </e>
       </e>
