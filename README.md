@@ -8,6 +8,8 @@ Get the Unitypackage from the latest [release](https://github.com/crookookoo/gre
 
 Sign up at [greybox.it](https://greybox.it/) to get a personal token to be pasted into the `Greybox` inspector. Use the test scene for troubleshooting.
 
+Equirectangular panorama captures will be uploaded to the web as well as stored locally in the project folder. Additionally you can upload any equirectangular panorama via web dashboard (drag and drop the file in).
+
 See video here:\
 https://www.reddit.com/r/Unity3D/comments/bbl97w/im_building_a_little_plugin_that_allows_you_to/
 
