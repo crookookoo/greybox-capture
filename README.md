@@ -2,7 +2,7 @@
 
 Greybox is a little plugin that uploads a 360 capture of your Unity scene to the web in a single click. 
 
-### Quick start
+## Quick start
 
 Get the Unitypackage from the latest [release](https://github.com/crookookoo/greybox-capture/releases).
 
@@ -14,7 +14,7 @@ See video here:\
 https://www.reddit.com/r/Unity3D/comments/bbl97w/im_building_a_little_plugin_that_allows_you_to/
 
 
-### Examples
+## Examples
 Test scene upload looks like this:\
 https://greybox.it/PkQtVJ
 
