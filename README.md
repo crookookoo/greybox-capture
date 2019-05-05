@@ -12,3 +12,6 @@ https://greybox.it/PkQtVJ
 
 And this is a hi res render uploaded via web (can take any equirect):\
 https://greybox.it/ilm9XM
+
+![alt text](http://eugene.works.s3.amazonaws.com/cloud/gbxt-screenshots.png "Greybox screenshots")
+
